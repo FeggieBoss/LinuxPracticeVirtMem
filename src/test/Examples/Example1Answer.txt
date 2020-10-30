@@ -1,0 +1,21 @@
+Result of FIFO (first in - first out) work:
+1. Page 1: Put in an empty frame 1
+2. Page 2: Put in an empty frame 2
+3. Page 3: Need to replace frame number 1 (with page 1 inside)
+4. Page 1: Need to replace frame number 2 (with page 2 inside)
+5. Page 2: Need to replace frame number 1 (with page 3 inside)
+The sum of answers of the second type for FIFO: 3
+Result of LRU (least recently used) work:
+1. Page 1: Put in an empty frame 1
+2. Page 2: Put in an empty frame 2
+3. Page 3: Need to replace frame number 1 (with page 1 inside)
+4. Page 1: Need to replace frame number 2 (with page 2 inside)
+5. Page 2: Need to replace frame number 1 (with page 3 inside)
+The sum of answers of the second type for LRU: 3
+Result of OPT (optimal) work:
+1. Page 1: Put in an empty frame 1
+2. Page 2: Put in an empty frame 2
+3. Page 3: Need to replace frame number 2 (with page 2 inside)
+4. Page 1: The page number 1 is already loaded into RAM, nothing needs to be done
+5. Page 2: Need to replace frame number 1 (with page 1 inside)
+The sum of answers of the second type for OPT: 2
