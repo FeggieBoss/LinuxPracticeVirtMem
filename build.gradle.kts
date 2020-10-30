@@ -51,4 +51,5 @@ val runJar by tasks.creating(Exec::class) {
     val jarFile = tasks.shadowJar.get().outputs.files.singleFile
     val evalArgs = listOf("java", "-jar", jarFile.absolutePath) + argvString.split(" ")
     commandLine(*evalArgs.toTypedArray())
+
 }
